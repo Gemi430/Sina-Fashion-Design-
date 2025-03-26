@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav>
+        <ul class="sidebar">
+          <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#service">Services</a></li>
+          <li><a href="#">Testimonals</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="Blog.html">Blog</a></li>
+        </ul>
+        <img src="images/photo_2025-01-31_04-12-05.jpg" alt="logo photo">
+        <ul>
+          <li class="hideOnMobile"><a href="index.html">Home</a></li>
+          <li class="hideOnMobile"><a href="#">Products</a></li>
+          <li class="hideOnMobile"><a href="#">Services</a></li>
+          <li class="hideOnMobile"><a href="#">Testimonals</a></li>
+          <li class="hideOnMobile"><a href="#">Contact</a></li>
+          <li class="hideOnMobile"><a href="Blog.html">Blog</a></li>
+        </ul>
+        <button class="hideOnMobile">Shop Now</button>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>   
+      </nav>
+    
+      <script>
+        function showSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'none'
+        }
+      </script>
+
+
+    <section id="blog" style="padding-top: 90px;">
+        <h2>Our Blog</h2>
+        <article class="blog-post">
+            <h3><a href="blog-post-1.html">The Beauty of Oromo Traditional Attire</a></h3>
+            <p class="post-date">Published on October 15, 2023</p>
+            <p>Discover the rich history and vibrant designs of Oromo traditional attire. Learn about the cultural significance behind each piece and how it represents the identity of the Oromo people.</p>
+            <a href="Blog1.html" class="read-more">Read More</a>
+        </article>
+    
+        <article class="blog-post">
+            <h3><a href="blog-post-2.html">Modern Ethiopian Fashion Trends</a></h3>
+            <p class="post-date">Published on September 30, 2023</p>
+            <img src="images/modern-fashion.jpg" alt="Modern Ethiopian Fashion" />
+            <p>Explore the latest trends in modern Ethiopian fashion that blend traditional elements with contemporary styles. Get inspired by our collection!</p>
+            <a href="Blog2.html" class="read-more">Read More</a>
+        </article>
+    
+        <article class="blog-post">
+            <h3><a href="blog-post-3.html">How to Style Traditional Ethiopian Clothes</a></h3>
+            <p class="post-date">Published on September 10, 2023</p>
+            <img src="images/styling-tips.jpg" alt="Styling Traditional Ethiopian Clothes" />
+            <p>Learn how to style traditional Ethiopian clothes for various occasions. From casual outings to formal events, we have tips to help you look your best!</p>
+            <a href="blog-post-3.html" class="read-more">Read More</a>
+        </article>
+    
+        <article class="blog-post">
+            <h3><a href="blog-post-4.html">The Significance of Colors in Ethiopian Fashion</a></h3>
+            <p class="post-date">Published on August 25, 2023</p>
+            <img src="images/colors-ethiopian-fashion.jpg" alt="Colors in Ethiopian Fashion" />
+            <p>Colors play a significant role in Ethiopian fashion. Discover what different colors symbolize and how they are used in traditional and modern designs.</p>
+            <a href="blog-post-4.html" class="read-more">Read More</a>
+        </article>
+    
+        <article class="blog-post">
+            <h3><a href="blog-post-5.html">Ethiopian Fashion Designers to Watch</a></h3>
+            <p class="post-date">Published on August 1, 2023</p>
+            <img src="images/fashion-designers.jpg" alt="Ethiopian Fashion Designers" />
+            <p>Meet the talented Ethiopian fashion designers who are making waves in the industry. Get to know their unique styles and contributions to Ethiopian fashion.</p>
+            <a href="blog-post-5.html" class="read-more">Read More</a>
+        </article>
+    </section>
+    
+    
+    
+    
+    
+            <footer>
+              <div class="footer-content">
+                <h3>About Us</h3>
+                <p>At Sina Fashion Design, we are dedicated to bringing you the latest trends and timeless styles. Our mission is to provide high-quality fashion that empowers and inspires.</p>
+              </div>
+              <div class="footer-content">
+                <h3>Contact Us</h3>
+                <p>Email: info@sinafashiondesign.com</p>
+                <p>Phone: +123 456 7890</p>
+                <p>Address: 123 Fashion Street, New York, NY 10001</p>
+              </div>
+              <div class="footer-content">
+                <h3>Follow Us</h3>
+               <a href="https://t.me/kenakondesign"> <p>Telegram </p></a>
+              <a href="https://www.tiktok.com/@gelanebenti"><p>Tiktok</p> </a>
+                <p>Instagram</p>
+                <p>Facebook</p>
+              </div>
+            </footer>
+    
+    
+            <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Sina Fashion Design. All rights reserved.</p>
+            </div>
+    
+    
+    
+            <script>
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+            </script>
+    
+    
+</body>
+</html>
