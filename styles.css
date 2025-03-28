@@ -90,8 +90,8 @@ nav button, nav p{
     font-weight: 600;
 }
 nav button{
-    color: rgba(23, 234, 234, 0.766);
-    background-color: black;
+    color: chocolate;
+    border: 1px solid black;
     padding: 5px 15px;
     cursor: pointer;
     border-radius: 5px;
@@ -116,7 +116,7 @@ nav li a:hover{
 .sidebar{
   position: fixed;
   margin-top: 20px;
-  top: 0; 
+  top: -20px; 
   right: 0;
   height: 50vh;
   width: 250px;

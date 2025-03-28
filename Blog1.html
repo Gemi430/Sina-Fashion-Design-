@@ -43,42 +43,39 @@
     
     /* Blog Post Styles */
     .blog-post {
+        margin-bottom: 50px;
         max-width: 800px; /* Limit the width for readability */
         padding: 50px;
-        margin: auto;
-        margin-bottom: 20px;
         background: white; /* White background for contrast */
         border-radius: 5px; /* Rounded corners */
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     }
-    
+    .blog-flex{
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
     .post-date {
         font-style: italic; /* Italicize the date */
         color: #999; /* Lighter color for the date */
     }
     
-    /* Image Styles */
-    img {
-        width: 100%;
-        max-width: 100%; /* Responsive images */
-        height: auto; /* Maintain aspect ratio */
-        border-radius: 5px; /* Rounded corners for images */
-        margin: 10px;
-    }
-    
-    /* Back to Blog Link */
     .back-to-blog {
         display: inline-block; /* Make it a block element */
         margin-top: 10px; /* Space above the link */
         padding: 10px 15px; /* Padding for better click area */
-        background-color: #007BFF; /* Bootstrap primary color */
-        color: white; /* White text */
+        background-color: white; /* Bootstrap primary color */
+        color: chocolate; /* White text */
         text-decoration: none; /* Remove underline */
         border-radius: 5px; /* Rounded corners */
+        border: 1px solid chocolate
     }
     
     .back-to-blog:hover {
-        background-color: #0056b3; /* Darker shade on hover */
+        background-color: rgba(230, 172, 131, 0.463); /* Darker shade on hover */
     }
     
     /* Responsive Styles */
@@ -152,29 +149,59 @@
         }
       </script>
 
-
-
-    <article class="blog-post">
+  <div class="blog-flex">
+    <div class="blog-post">
         <h1>The Beauty of Oromo Traditional Attire</h1>
         <p class="post-date">Published on October 15, 2023</p>
-        <img src="images/img1.jpg" alt="Oromo Traditional Attire" />
-        <p>The Oromo people, one of the largest ethnic groups in Ethiopia, have a rich cultural heritage that is beautifully expressed through their traditional attire. The clothing worn by the Oromo reflects their identity, history, and social status. Here are some key features:</p>
-        
+        <p>The Oromo people, one of the largest ethnic groups in Ethiopia, have a rich cultural heritage that is beautifully expressed through their traditional attire. The clothing worn by the Oromo reflects their identity, history, and social status. Here are some key features:</p>   
         <h2>Key Features of Oromo Attire</h2>
         <ul>
             <li><strong>Colors and Patterns:</strong> Oromo traditional attire often features bright colors and intricate patterns that represent various aspects of their culture.</li>
             <li><strong>Materials:</strong> Handwoven cotton and silk are commonly used, showcasing the craftsmanship of local artisans.</li>
             <li><strong>Accessories:</strong> Jewelry and other accessories made from beads, silver, and leather complement the outfits.</li>
         </ul>
-
         <h2>Cultural Significance</h2>
         <p>Each piece of clothing carries significant meaning. For example, the use of certain colors can symbolize fertility or bravery. Special garments are worn during ceremonies and celebrations, making them integral to cultural identity.</p>
 
         <h2>Modern Adaptations</h2>
         <p>Today, many designers are incorporating traditional Oromo elements into modern fashion, creating a fusion that appeals to younger generations while preserving cultural heritage.</p>
 
-        <a href="index.html" class="back-to-blog">Back to Blog</a>
-    </article>
+        <a href="Blog.html" class="back-to-blog">Back to Blog</a>
+    </div>
+</div>
+
+    
+    
+    <footer>
+        <div class="footer-content">
+          <h3>About Us</h3>
+          <p>At Sina Fashion Design, we are dedicated to bringing you the latest trends and timeless styles. Our mission is to provide high-quality fashion that empowers and inspires.</p>
+        </div>
+        <div class="footer-content">
+          <h3>Contact Us</h3>
+          <p>Email: info@sinafashiondesign.com</p>
+          <p>Phone: +123 456 7890</p>
+          <p>Address: 123 Fashion Street, New York, NY 10001</p>
+        </div>
+        <div class="footer-content">
+          <h3>Follow Us</h3>
+         <a href="https://t.me/kenakondesign"> <p>Telegram </p></a>
+        <a href="https://www.tiktok.com/@gelanebenti"><p>Tiktok</p> </a>
+          <p>Instagram</p>
+          <p>Facebook</p>
+        </div>
+      </footer>
+
+
+      <div class="footer-bottom" style="width: 100%;">
+      <p>&copy; <span id="current-year"></span> Sina Fashion Design. All rights reserved.</p>
+      </div>
+
+
+
+      <script>
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+      </script>
 
 </body>
 </html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sina Fashion Design | Ethiopian Cultural and Modern Clothing</title>
+    <meta name="description" content="Discover Sina Fashion Design, your premier destination for authentic Ethiopian cultural clothes, including Oromo attire and modern fashion. Shop now!">
+    <meta name="keywords" content="Ethiopian clothing, Oromo cultural clothes, modern Ethiopian fashion, traditional attire, Sina Fashion Design, Uffata Aadaa, Uffannaa Aadaa Oromoo">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+            <nav>
+                <ul class="sidebar">
+                  <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="Product.html">Products</a></li>
+                  <li><a href="service.html">Services</a></li>
+                  <li><a href="Testimonals.html">Testimonals</a></li>
+                  <li><a href="Contact.html">Contact</a></li>
+                  <li><a href="Blog.html">Blog</a></li>
+                </ul>
+                <img src="images/photo_2025-01-31_04-12-05.jpg" alt="logo photo">
+                <ul>
+                  <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                  <li class="hideOnMobile"><a href="Product.html">Products</a></li>
+                  <li class="hideOnMobile"><a href="service.html">Services</a></li>
+                  <li class="hideOnMobile"><a href="Testimonals.html">Testimonals</a></li>
+                  <li class="hideOnMobile"><a href="Contact.html">Contact</a></li>
+                  <li class="hideOnMobile"><a href="Blog.html">Blog</a></li>
+                </ul>
+              <a href="Contact.html"><button class="hideOnMobile">Shop Now</button></a> 
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>   
+              </nav>
+            
+              <script>
+                function showSidebar(){
+                  const sidebar = document.querySelector('.sidebar')
+                  sidebar.style.display = 'flex'
+                }
+                function hideSidebar(){
+                  const sidebar = document.querySelector('.sidebar')
+                  sidebar.style.display = 'none'
+                }
+              </script>
+
+<div class="product-flex" >
+    <div class="section2" style="margin:0; padding-top: 100px; border: none;">
+        <h1 id="products" class="block">Our <span>Products</span></h1>
+        <div class="container">
+          <figure class="block">
+            <img src="images/img1.jpg">
+            <figcaption>Ethiopian cultural clothes</figcaption>
+          </figure>
+          <figure class="block">
+            <img src="images/img2.jpg">
+            <figcaption>Stylish design for models</figcaption>
+          </figure>
+          <figure class="block">
+            <img src="images/img3.jpg">
+            <figcaption>Cultural wedding clothes</figcaption>
+          </figure>
+          <figure class="block">
+            <img src="images/img4.jpg">
+            <figcaption>Modern hair styles</figcaption>
+          </figure>
+          <figure class="block">
+            <img src="images/img5.jpg">
+            <figcaption>Graduation day clothes</figcaption>
+          </figure>
+          <figure class="block">
+            <img src="images/img2.jpg">
+            <figcaption>Wedding makeup</figcaption>
+          </figure>
+      </div>
+</div>
+
+
+<footer>
+    <div class="footer-content">
+      <h3>About Us</h3>
+      <p>At Sina Fashion Design, we are dedicated to bringing you the latest trends and timeless styles. Our mission is to provide high-quality fashion that empowers and inspires.</p>
+    </div>
+    <div class="footer-content">
+      <h3>Contact Us</h3>
+      <p>Email: info@sinafashiondesign.com</p>
+      <p>Phone: +123 456 7890</p>
+      <p>Address: 123 Fashion Street, New York, NY 10001</p>
+    </div>
+    <div class="footer-content">
+      <h3>Follow Us</h3>
+     <a href="https://t.me/kenakondesign"> <p>Telegram </p></a>
+    <a href="https://www.tiktok.com/@gelanebenti"><p>Tiktok</p> </a>
+      <p>Instagram</p>
+      <p>Facebook</p>
+    </div>
+  </footer>
+
+  <div class="footer-bottom">
+  <p>&copy; <span id="current-year"></span> Sina Fashion Design. All rights reserved.</p>
+  </div>
+  <script>
+  document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
