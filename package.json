@@ -1,0 +1,26 @@
+{
+  "name": "fashion-design",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gemi430/Sina-Fashion-Design-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gemi430/Sina-Fashion-Design-/issues"
+  },
+  "homepage": "https://github.com/Gemi430/Sina-Fashion-Design-#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongoose": "^8.13.0",
+    "nodemon": "^3.1.9",
+    "path": "^0.12.7"
+  }
+}

@@ -181,11 +181,11 @@
       <div class="contact-section">
         <div class="get-in-touch">
           <h3>Get in Touch</h3>
-          <form>
-            <input class="input" type="text" placeholder="Enter Your Full Name">
-            <input class="input" type="email" placeholder="Enter Your Email">
-            <input class="input" type="number" placeholder="Enter Your Phone Number">
-            <textarea placeholder="Leave your message here..."></textarea><br>
+          <form action="/post" method="post"> 
+            <input name="name" id="name" class="input" type="text" placeholder="Enter Your Full Name">
+            <input name="email" id="email" class="input" type="email" placeholder="Enter Your Email">
+            <input name="phone" id="phone" class="input" type="number" placeholder="Enter Your Phone Number">
+            <textarea name="message" id="message" placeholder="Leave your message here..."></textarea><br>
             <button  type="submit">Send Message</button>
           </form>
         </div>
