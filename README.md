@@ -50,7 +50,6 @@ We welcome contributions from the community! If you'd like to contribute to Sina
 For inquiries, collaborations, or feedback, please reach out:
 
 - **Email**: tgemi130@gmail.com
-- **Website**: [yourwebsite.com](https://yourwebsite.com)
 
 Thank you for visiting the Sina Fashion Design project! We hope you find inspiration in our designs and contribute to our journey in fashion.
 
